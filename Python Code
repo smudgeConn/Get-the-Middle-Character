@@ -1,0 +1,11 @@
+def get_middle(s):
+    even_or_odd = ''
+    middle = len(s)//2
+    if len(s)%2==0:
+        even_or_odd = 'even'
+    elif len(s)%2!=0:
+        even_or_odd = 'odd'
+    if even_or_odd == 'even':
+        return s[middle-1]+s[middle]
+    elif even_or_odd == 'odd':
+        return s[middle]
